@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rayen Allegui — Freelance Graphic Designer in Tunisia. Logos, posters, product visuals and social media content.">
+  <meta name="theme-color" content="#0b0c0f">
+  <meta property="og:title" content="Rayen Allegui — Graphic Designer">
+  <meta property="og:description" content="Logos, posters, product visuals and social media content. Available for freelance work.">
+  <meta property="og:type" content="website">
+  <title>Rayen Allegui — Graphic Designer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080b14'/%3E%3Ctext x='32' y='44' font-size='34' font-weight='700' text-anchor='middle' fill='%234da3ff' font-family='sans-serif'%3ER%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+  
+  <style>
+    :root{
+      --bg:#080b14;--panel:#101625;--text:#f5f7ff;--muted:#9aa6bd;
+      --line:rgba(120,160,255,.14);--accent:#4da3ff;--max:1120px;
+      --f-body:"DM Sans","Cairo",sans-serif;
+      --f-head:"Space Grotesk","Cairo",sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:20px}
+    body{background:var(--bg);color:var(--text);font-family:var(--f-body);line-height:1.6;overflow-x:hidden}
+    body:before{
+      content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;
+      background-image:radial-gradient(rgba(77,163,255,.12) .7px,transparent .7px);
+      background-size:7px 7px;z-index:-1;
+    }
+    a{color:inherit;text-decoration:none}
+    :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+    .wrap{max-width:var(--max);margin:auto;padding:0 28px}
+    nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line)}
+    .brand{font-family:var(--f-head);font-weight:700;font-size:20px;letter-spacing:-.04em}
+    .brand span{color:var(--accent)}
+    .nav-right{display:flex;align-items:center;gap:30px}
+    .navlinks{display:flex;gap:30px;color:#b8bac2;font-size:14px}
+    .navlinks a:hover{color:var(--accent)}
+    .lang-btn{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:7px;padding:7px 12px;font:700 12px var(--f-head);cursor:pointer;transition:.2s}
+    .lang-btn:hover{background:linear-gradient(135deg,#4da3ff,#8b5cf6);color:#ffffff;border-color:#4da3ff}
+    .hero{min-height:calc(100vh - 82px);min-height:calc(100svh - 82px);display:grid;place-items:center;padding:70px 0 90px}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center;width:100%}
+    .eyebrow{display:flex;align-items:center;gap:10px;color:var(--accent);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;margin-bottom:22px}
+    .dot{width:7px;height:7px;background:var(--accent);border-radius:50%;box-shadow:0 0 20px #4da3ff,0 0 34px rgba(139,92,246,.55);flex:none}
+    h1{font-family:var(--f-head);font-size:clamp(44px,8vw,104px);line-height:.88;letter-spacing:-.075em;max-width:850px}
+    h1 .outline{color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.55)}
+    .hero-copy{font-size:18px;color:var(--muted);max-width:600px;margin:30px 0 34px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 20px;border:1px solid var(--line);border-radius:7px;font-weight:700;font-size:14px;transition:.2s;display:inline-block}
+    .btn.primary{background:linear-gradient(135deg,#4da3ff,#8b5cf6);color:#ffffff;border-color:#4da3ff}
+    .btn:hover{transform:translateY(-2px);border-color:#4da3ff;box-shadow:0 8px 28px rgba(77,163,255,.16)}
+    .hero-card{position:relative}
+    .profile{position:relative;aspect-ratio:1/1.08;background:linear-gradient(145deg,#18243a,#0b101d);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;align-items:flex-end;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+    .profile:before{content:"R";position:absolute;right:-5px;top:-48px;font:700 300px/1 "Space Grotesk",sans-serif;color:rgba(77,163,255,.08);letter-spacing:-.1em}
+    .profile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .profile-info{position:relative;z-index:1}.profile:after{content:"";position:absolute;width:220px;height:220px;right:-70px;bottom:-90px;background:radial-gradient(circle,rgba(139,92,246,.24),transparent 68%);pointer-events:none}
+    .profile-name{font:700 30px var(--f-head);letter-spacing:-.05em}
+    .profile-role{color:var(--accent);font-size:13px;margin-top:3px}
+    .availability{position:absolute;top:22px;left:22px;z-index:2;border:1px solid var(--line);background:rgba(8,12,22,.78);backdrop-filter:blur(8px);padding:8px 11px;border-radius:99px;font-size:11px;color:#c8c9ce}
+    .availability i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-inline-end:6px}
+    section{padding:110px 0;border-top:1px solid var(--line)}
+    .section-head{display:flex;justify-content:space-between;gap:30px;margin-bottom:48px}
+    .kicker{color:var(--accent);font:700 12px var(--f-head);text-transform:uppercase;letter-spacing:.15em}
+    h2{font:700 clamp(34px,5vw,62px)/.95 var(--f-head);letter-spacing:-.06em;max-width:600px}
+    .summary{max-width:550px;color:#b1b3bb;font-size:17px}
+    .skills{display:grid;grid-template-columns:repeat(2,1fr);column-gap:40px;border-top:1px solid var(--line)}
+    .skill{padding:27px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+    .skill strong{font:600 18px var(--f-head)}
+    .skill span{color:var(--muted);font-size:14px;text-align:end}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+    .media-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;min-height:280px;position:relative}
+    .media-card.big{grid-column:span 2;min-height:400px}
+    .media-card img,.media-card iframe,.media-card video{width:100%;height:100%;min-height:inherit;object-fit:cover;display:block;border:0;position:absolute;inset:0}
+    .media-card button.open{position:absolute;inset:0;background:none;border:0;cursor:zoom-in}
+    .media-label{position:absolute;left:18px;top:18px;z-index:2;background:rgba(8,12,22,.82);backdrop-filter:blur(8px);border:1px solid var(--line);padding:7px 10px;border-radius:99px;font-size:11px;color:#ddd;pointer-events:none}
+    .media-placeholder{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:35px;color:var(--muted);background:linear-gradient(135deg,#16243b,#0b101b)}
+    .media-placeholder:before{content:"";position:absolute;inset:18px;border:1px dashed rgba(255,255,255,.13);border-radius:10px}
+    .media-placeholder strong{display:block;color:var(--text);font:600 18px var(--f-head);margin-bottom:6px;position:relative}
+    .media-placeholder span{font-size:13px;position:relative}
+    .work-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:30px}
+    .work-card h3{font:700 27px var(--f-head);letter-spacing:-.04em}
+    .work-card p{color:var(--muted);max-width:650px;margin-top:10px}
+    .tag{align-self:start;border:1px solid var(--line);border-radius:99px;padding:7px 12px;font-size:11px;color:#c9cad0}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+    .contact h2{margin-top:12px}
+    .contact-list{display:flex;flex-direction:column}
+    .contact-item{padding:19px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;transition:.2s}
+    a.contact-item:hover strong{color:var(--accent)}
+    .contact-item small{color:var(--muted)}
+    .contact-item strong{font-size:15px;direction:ltr;unicode-bidi:isolate;overflow-wrap:anywhere}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:#8a8d96;font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .lightbox{position:fixed;inset:0;background:rgba(3,6,14,.94);display:none;place-items:center;z-index:50;padding:24px;cursor:zoom-out}
+    .lightbox.on{display:grid}
+    .lightbox img{max-width:100%;max-height:100%;border-radius:10px}
+    .reveal{opacity:0;transform:translateY(18px);transition:.7s ease}
+    .reveal.show{opacity:1;transform:none}
+
+    .fixed-logo {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 220px;
+      max-width: 35vw;
+      height: auto;
+      z-index: 9999;
+      pointer-events: auto;
+      filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 12px rgba(77, 163, 255, 0.3));
+      animation: logoFloat 4s ease-in-out infinite, logoGlow 3s ease-in-out infinite alternate;
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease, width 0.3s ease, bottom 0.3s ease, right 0.3s ease;
+    }
+
+    .fixed-logo:hover {
+      transform: translateY(-8px) scale(1.05) rotate(2deg);
+      filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 25px rgba(77, 163, 255, 0.6));
+    }
+
+    @keyframes logoFloat {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-10px) rotate(-1.5deg);
+      }
+    }
+
+    @keyframes logoGlow {
+      0% {
+        filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 8px rgba(77, 163, 255, 0.2));
+      }
+      100% {
+        filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65)) drop-shadow(0 0 22px rgba(77, 163, 255, 0.55));
+      }
+    }
+
+    /* Arabic RTL support */
+    [dir="rtl"] *{letter-spacing:0!important}
+    [dir="rtl"] h1{line-height:1.25}
+    [dir="rtl"] h2{line-height:1.3}
+    [dir="rtl"] .profile:before{right:auto;left:-5px}
+    [dir="rtl"] .availability{left:auto;right:22px}
+    [dir="rtl"] .media-label{left:auto;right:18px}
+    [dir="rtl"] .fixed-logo{right:auto;left:24px}
+
+    @media(max-width:800px){
+      .navlinks a:not(.keep){display:none}
+      .nav-right{gap:16px}
+      .hero{padding:55px 0 75px}
+      .hero-grid,.contact{grid-template-columns:1fr;gap:45px}
+      .hero-grid{align-items:start}
+      .hero-card{max-width:430px}
+      h1{font-size:clamp(44px,14vw,80px)}
+      .section-head{flex-direction:column}
+      .skills{grid-template-columns:1fr}
+      .skill{display:block}.skill span{display:block;text-align:start;margin-top:5px}
+      .work-card{grid-template-columns:1fr}
+      .media-card.big{grid-column:auto;min-height:280px}
+      .fixed-logo { width: 140px; bottom: 16px; right: 16px; }
+      [dir="rtl"] .fixed-logo{right:auto;left:16px}
+    }
+    @media(max-width:480px){
+      .wrap{padding:0 20px}
+      .hero-copy{font-size:16px}
+      section{padding:78px 0}
+      .buttons .btn{width:100%;text-align:center}
+      .fixed-logo { width: 110px; bottom: 12px; right: 12px; }
+      [dir="rtl"] .fixed-logo{right:auto;left:12px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .reveal{opacity:1;transform:none;transition:none}
+      .btn:hover{transform:none}
+      .fixed-logo{animation:none}
+    }
+  </style>
+</head>
+<body>
+  <img src="Logo.png" alt="Rayx Logo" class="fixed-logo">
+
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top" aria-label="Rayx home">Ray<span>.</span>x</a>
+      <div class="nav-right">
+        <div class="navlinks">
+          <a href="#about" data-ar="من أنا">About</a>
+          <a href="#skills" data-ar="المهارات">Skills</a>
+          <a href="#portfolio" data-ar="أعمالي">Portfolio</a>
+          <a href="#contact" class="keep" data-ar="اتصل بي ↗">Contact ↗</a>
+        </div>
+        <button class="lang-btn" id="langBtn" type="button" aria-label="Change language">AR</button>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero" style="border-top:0">
+        <div class="hero-grid">
+          <div class="reveal">
+            <div class="eyebrow"><span class="dot"></span><span data-ar="متاح للعمل الحر">Available for freelance work</span></div>
+            <h1 data-ar='تصميم<br><span class="outline">يلفت</span><br>الأنظار.'>DESIGN<br><span class="outline">THAT</span><br>STANDS OUT.</h1>
+            <p class="hero-copy" data-ar="أنا Rayen Allegui، مصمم جرافيك مستقل أركز على تصميمات عصرية ونظيفة للعلامات التجارية والمنتجات ووسائل التواصل الاجتماعي.">I'm Rayen Allegui, a freelance graphic designer focused on clean, modern visuals for brands, products and social media.</p>
+            <div class="buttons">
+              <a class="btn primary" href="#contact" data-ar="لنعمل معًا ↗">Let's work together ↗</a>
+              <a class="btn" href="#portfolio" data-ar="شاهد أعمالي">View my work</a>
+            </div>
+          </div>
+          <div class="hero-card reveal">
+            <div class="profile">
+              <div class="availability"><i></i><span data-ar="مفتوح للمشاريع">Open to projects</span></div>
+              <div class="profile-info">
+                <div class="profile-name">Rayen Allegui</div>
+                <div class="profile-role" data-ar="مصمم جرافيك · تونس">Graphic Designer · Tunisia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-head reveal">
+          <div class="kicker" data-ar="01 / من أنا">01 / About</div>
+          <div>
+            <h2 data-ar="مصمم شاب.<br>أتعامل مع العمل بجدية.">Young designer.<br>Serious about the work.</h2>
+            <p class="summary" style="margin-top:25px" data-ar="أنا مصمم جرافيك مستقل أبلغ 16 عامًا، أصمم الشعارات والملصقات وصور المنتجات ومحتوى وسائل التواصل الاجتماعي. أتعلم بسرعة، أحترم المواعيد النهائية وأهتم بأن يكون كل مشروع احترافيًا.">I'm a 16-year-old freelance graphic designer who creates logos, posters, product visuals and social media content. I learn quickly, respect deadlines and focus on making every project look polished and professional.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-head reveal">
+          <div class="kicker" data-ar="02 / المهارات">02 / Skills</div>
+          <h2 data-ar="ما يمكنني<br>تصميمه لك.">What I can<br>create for you.</h2>
+        </div>
+        <div class="skills reveal">
+          <div class="skill"><strong data-ar="01 — تصميم الشعارات">01 — Logo Design</strong><span data-ar="هوية · علامة تجارية · أنظمة بصرية">Identity · Branding · Visual systems</span></div>
+          <div class="skill"><strong data-ar="02 — الملصقات والمنشورات">02 — Posters &amp; Flyers</strong><span data-ar="ترويج · فعاليات · حملات">Promotional · Events · Campaigns</span></div>
+          <div class="skill"><strong data-ar="03 — أدوات التصميم الحديثة">03 — Modern Design Tools</strong><span>Canva · Adobe Photoshop</span></div>
+          <div class="skill"><strong data-ar="04 — تسليم سريع">04 — Fast Delivery</strong><span data-ar="تواصل واضح · التزام بالمواعيد">Clear communication · Deadlines</span></div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="section-head reveal">
+          <div class="kicker" data-ar="03 / أعمالي">03 / Portfolio</div>
+          <h2 data-ar="أعمالي.<br>دع التصاميم تتحدث.">My work.<br>Let the designs speak.</h2>
+        </div>
+        <div class="portfolio-grid reveal" id="grid"></div>
+      </section>
+
+      <section id="work">
+        <div class="section-head reveal">
+          <div class="kicker" data-ar="04 / طريقة العمل">04 / Approach</div>
+          <h2 data-ar="طريقة عملية<br>مع كل مشروع.">A practical approach<br>to every project.</h2>
+        </div>
+        <div class="work-card reveal">
+          <div>
+            <h3 data-ar="من الفكرة إلى التصميم النهائي.">From idea to finished visual.</h3>
+            <p data-ar="أحوّل الطلب إلى تصاميم واضحة وجذابة مع اهتمام بالتركيب والخطوط والتناسق. هدفي بسيط: أن يكون التصميم النهائي مفيدًا ولا يُنسى وجاهزًا للنشر.">I turn a brief into clear, attractive visuals with attention to composition, typography and consistency. My goal is simple: make the final design useful, memorable and ready to publish.</p>
+          </div>
+          <div class="tag" data-ar="عن بُعد / عمل حر">REMOTE / FREELANCE</div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact">
+          <div class="reveal">
+            <div class="kicker" data-ar="05 / اتصل بي">05 / Contact</div>
+            <h2 data-ar="لديك مشروع<br>في ذهنك؟">Have a project<br>in mind?</h2>
+            <p class="summary" style="margin-top:24px" data-ar="أخبرني بما تحتاج وسأتواصل معك.">Tell me what you need and I'll get back to you.</p>
+          </div>
+          <div class="contact-list reveal">
+            <a class="contact-item" href="mailto:rayx594@gmail.com"><small data-ar="البريد الإلكتروني">Email</small><strong>rayx594@gmail.com ↗</strong></a>
+            <a class="contact-item" href="https://wa.me/21628026098" target="_blank" rel="noopener"><small>WhatsApp</small><strong>+216 28 026 098 ↗</strong></a>
+            <div class="contact-item"><small data-ar="اسم المستخدم">Username</small><strong>Rayx</strong></div>
+            <div class="contact-item"><small data-ar="الموقع">Location</small><strong data-ar="تونس">Tunisia</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Rayen Allegui</span>
+      <span data-ar="مصمم جرافيك / عمل حر">Graphic Designer / Freelancer</span>
+    </footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true"><img alt=""></div>
+
+  <script>
+  const WORKS = [];
+  const CV_URL = "";
+
+  const store = {
+    get(k){ try{ return localStorage.getItem(k) }catch(e){ return null } },
+    set(k,v){ try{ localStorage.setItem(k,v) }catch(e){} }
+  };
+
+  // Scroll reveal
+  const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } }), {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Language translation logic
+  const items = [...document.querySelectorAll('[data-ar]')];
+  items.forEach(el => el.dataset.en = el.innerHTML);
+  const langBtn = document.getElementById('langBtn');
+  let arabic = false;
+  function setLanguage(ar){
+    arabic = ar;
+    document.documentElement.lang = ar ? 'ar' : 'en';
+    document.documentElement.dir = ar ? 'rtl' : 'ltr';
+    items.forEach(el => el.innerHTML = ar ? el.dataset.ar : el.dataset.en);
+    langBtn.textContent = ar ? 'EN' : 'AR';
+    renderPlaceholders();
+    store.set('rayx-language', ar ? 'ar' : 'en');
+  }
+  langBtn.addEventListener('click', () => setLanguage(!arabic));
+
+  // CV button setup
+  if (CV_URL) { const b = document.getElementById('cvBtn'); b.href = CV_URL; b.hidden = false; }
+
+  // Portfolio grid rendering
+  const grid = document.getElementById('grid');
+  const lb = document.getElementById('lightbox');
+  function renderPlaceholders(){
+    if (WORKS.length) return;
+    const t = arabic
+      ? [['أعمالي قريبًا','سأضيف أحدث تصاميمي هنا.'],['شعارات','قريبًا'],['ملصقات','قريبًا']]
+      : [['Portfolio coming soon','My latest designs will be added here.'],['Logos','Coming soon'],['Posters','Coming soon']];
+    grid.innerHTML = t.map((x,i) => `<div class="media-card${i?'':' big'}"><div class="media-placeholder"><div><strong>${x[0]}</strong><span>${x[1]}</span></div></div></div>`).join('');
+  }
+  WORKS.forEach((w,i) => {
+    const c = document.createElement('div');
+    c.className = 'media-card' + (i === 0 ? ' big' : '');
+    const label = w.title ? `<div class="media-label">${w.title}</div>` : '';
+    if (w.type === 'youtube') {
+      c.innerHTML = label + `<iframe src="https://www.youtube-nocookie.com/embed/${w.id}" title="${w.title||'Video'}" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+    } else {
+      c.innerHTML = label + `<img src="${w.src}" alt="${w.title||'Design'}" loading="lazy"><button class="open" type="button" aria-label="Open image"></button>`;
+      c.querySelector('button').onclick = () => { lb.querySelector('img').src = w.src; lb.classList.add('on'); };
+    }
+    grid.appendChild(c);
+  });
+  lb.onclick = () => lb.classList.remove('on');
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('on'); });
+
+  setLanguage(store.get('rayx-language') === 'ar');
+  </script>
+
+  <style>
+    .snowflake{position:fixed;top:-20px;color:#4DA3FF;pointer-events:none;user-select:none;z-index:9999;opacity:0;animation:snowfall linear infinite}
+    @keyframes snowfall{0%{transform:translateY(-20px) rotate(0);opacity:0}10%{opacity:.7}100%{transform:translateY(110vh) rotate(360deg);opacity:.3}}
+    @media(prefers-reduced-motion:reduce){.snowflake{display:none}}
+  </style>
+  <script>
+    (function(){
+      var n = window.innerWidth < 700 ? 30 : 60;
+      for (var i = 0; i < n; i++) {
+        var d = document.createElement("div");
+        d.className = "snowflake";
+        d.textContent = "•";
+        d.setAttribute("aria-hidden", "true");
+        d.style.left = Math.random() * 100 + "vw";
+        d.style.fontSize = (Math.random() * 12 + 8) + "px";
+        d.style.animationDuration = (Math.random() * 5 + 5) + "s";
+        d.style.animationDelay = (Math.random() * 8) + "s";
+        document.body.appendChild(d);
+      }
+    })();
+  </script>
+</body>
+</html>
